@@ -10,7 +10,7 @@ import XCTest
 class BankManagerUIAppTests: XCTestCase {
     
     func testQueueOperations() {
-        var queue = LinkedQueue<Int>()
+        var queue = LinkedListQueue<Int>()
         
         XCTAssertTrue(queue.isEmpty())
         
@@ -30,7 +30,7 @@ class BankManagerUIAppTests: XCTestCase {
     }
     
     func testClearQueue() {
-        var queue = LinkedQueue<String>()
+        var queue = LinkedListQueue<String>()
         
         queue.enqueue("A")
         queue.enqueue("B")
