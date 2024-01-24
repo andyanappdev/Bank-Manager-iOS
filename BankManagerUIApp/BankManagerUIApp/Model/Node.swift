@@ -5,12 +5,14 @@
 //  Created by Doyoung An on 1/23/24.
 //
 
-class Node<T> {
+final class Node<T> {
     var value: T
+    var previous: Node?
     var next: Node?
     
-    init(value: T, next: Node? = nil) {
+    init(value: T, previous: Node? = nil, next: Node? = nil) {
         self.value = value
+        self.previous = previous
         self.next = next
     }
 }
