@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F99BB4A2B62A7A500FE9E85 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB492B62A7A500FE9E85 /* Node.swift */; };
 		7F99BB4C2B62A8B900FE9E85 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */; };
+		7F99BB4E2B62AA0F00FE9E85 /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */; };
 		C7694E7A259C3EC00053667F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7694E79259C3EC00053667F /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		7F99BB492B62A7A500FE9E85 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
 		C7694E76259C3EC00053667F /* BankManagerConsoleApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BankManagerConsoleApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7694E79259C3EC00053667F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +49,7 @@
 			children = (
 				7F99BB492B62A7A500FE9E85 /* Node.swift */,
 				7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */,
+				7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F99BB4C2B62A8B900FE9E85 /* LinkedList.swift in Sources */,
+				7F99BB4E2B62AA0F00FE9E85 /* QueueProtocol.swift in Sources */,
 				C7694E7A259C3EC00053667F /* main.swift in Sources */,
 				7F99BB4A2B62A7A500FE9E85 /* Node.swift in Sources */,
 			);
