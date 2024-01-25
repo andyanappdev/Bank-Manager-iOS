@@ -10,7 +10,7 @@ final class LinkedList<T> {
     //MARK: - Properties
     private var head: Node<T>?
     private var tail: Node<T>?
-    private var size: Int = 0
+    private(set) var size: Int = 0
     
     
     //MARK: - Methods
@@ -160,4 +160,8 @@ final class LinkedList<T> {
     func isEmpty() -> Bool {
         return head == nil || tail == nil
     }
+    
+//    func fetchSize() -> Int {
+//        return size
+//    }
 }
