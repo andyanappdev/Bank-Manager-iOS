@@ -42,9 +42,6 @@ final class LinkedList<T> {
             }
         } else if index >= size {
             append(value: value)
-        } else if index >= size { //tail에 추가
-            append(value: value)
-            return
         } else {
             let half = size / 2
             let isForward = (index <= half)
