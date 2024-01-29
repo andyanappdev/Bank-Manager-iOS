@@ -10,8 +10,15 @@ import Foundation
 class Banker {
     
     //MARK: - Properties
+    let id: UUID
     private(set) var totalCustomersProcessed: Int = 0
     private(set) var totalProcessingTime: Double = 0
+    private let processingTime: Double
+    
+    init(processingTime: Double) {
+        self.id = UUID()
+        self.processingTime = processingTime
+    }
     
     
     //MARK: - Methdo
