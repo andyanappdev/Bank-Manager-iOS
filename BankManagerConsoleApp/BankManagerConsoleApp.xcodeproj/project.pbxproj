@@ -67,10 +67,7 @@
 		7F99BB482B62A78E00FE9E85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7F99BB492B62A7A500FE9E85 /* Node.swift */,
-				7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */,
-				7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */,
-				7F99BB4F2B62ABDB00FE9E85 /* DoublyLinkedListQueue.swift */,
+				7F9D4B342B6731AB00B2664C /* DoublyLinkedListQueue */,
 				7F99BB642B62CB6E00FE9E85 /* Customer.swift */,
 				7F99BB622B62CA3800FE9E85 /* Banker.swift */,
 			);
@@ -83,6 +80,17 @@
 				7F99BB572B62AF3200FE9E85 /* DoublyLinkedListQueueTest.swift */,
 			);
 			path = DoublyLinkedListQueueTest;
+			sourceTree = "<group>";
+		};
+		7F9D4B342B6731AB00B2664C /* DoublyLinkedListQueue */ = {
+			isa = PBXGroup;
+			children = (
+				7F99BB492B62A7A500FE9E85 /* Node.swift */,
+				7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */,
+				7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */,
+				7F99BB4F2B62ABDB00FE9E85 /* DoublyLinkedListQueue.swift */,
+			);
+			path = DoublyLinkedListQueue;
 			sourceTree = "<group>";
 		};
 		C7694E6D259C3EC00053667F = {
