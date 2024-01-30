@@ -5,10 +5,11 @@
 //  Created by 박찬호 on 1/27/24.
 //
 
-class Customer {
-    let number: Int
+/// 고객의 고유 번호 설정
+struct Customer {
+    let waitingNumber: Int
     
-    init(number: Int) {
-        self.number = number
+    init(waitingNumber: Int) {
+        self.waitingNumber = waitingNumber
     }
 }

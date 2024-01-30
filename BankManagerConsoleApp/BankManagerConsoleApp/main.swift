@@ -6,4 +6,6 @@
 
 import Foundation
 
-bankStart()
+let bankController = BankController()
+
+bankController.runBankApp()
