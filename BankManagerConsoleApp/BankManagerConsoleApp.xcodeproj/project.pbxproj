@@ -11,6 +11,7 @@
 		7F5954E12B6B6A5500F12C0A /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5954E02B6B6A5500F12C0A /* Transaction.swift */; };
 		7F5954E42B6B878200F12C0A /* Banker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5954E32B6B878200F12C0A /* Banker.swift */; };
 		7F5954E72B6BA00900F12C0A /* ConsoleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5954E62B6BA00900F12C0A /* ConsoleMessage.swift */; };
+		7F5954E92B6BAEA000F12C0A /* LinkedListQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5954E82B6BAEA000F12C0A /* LinkedListQueue.swift */; };
 		7F99BB4A2B62A7A500FE9E85 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB492B62A7A500FE9E85 /* Node.swift */; };
 		7F99BB4C2B62A8B900FE9E85 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */; };
 		7F99BB4E2B62AA0F00FE9E85 /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */; };
@@ -42,6 +43,7 @@
 		7F5954E02B6B6A5500F12C0A /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		7F5954E32B6B878200F12C0A /* Banker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banker.swift; sourceTree = "<group>"; };
 		7F5954E62B6BA00900F12C0A /* ConsoleMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleMessage.swift; sourceTree = "<group>"; };
+		7F5954E82B6BAEA000F12C0A /* LinkedListQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListQueue.swift; sourceTree = "<group>"; };
 		7F99BB492B62A7A500FE9E85 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		7F99BB482B62A78E00FE9E85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7F9D4B342B6731AB00B2664C /* DoublyLinkedListQueue */,
+				7F9D4B342B6731AB00B2664C /* CustomLinkedListQueue */,
 				7F99BB642B62CB6E00FE9E85 /* Customer.swift */,
 				7F5954DE2B6B69B700F12C0A /* TransactionType.swift */,
 				7F5954E02B6B6A5500F12C0A /* Transaction.swift */,
@@ -101,15 +103,16 @@
 			path = DoublyLinkedListQueueTest;
 			sourceTree = "<group>";
 		};
-		7F9D4B342B6731AB00B2664C /* DoublyLinkedListQueue */ = {
+		7F9D4B342B6731AB00B2664C /* CustomLinkedListQueue */ = {
 			isa = PBXGroup;
 			children = (
 				7F99BB492B62A7A500FE9E85 /* Node.swift */,
 				7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */,
 				7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */,
 				7F99BB4F2B62ABDB00FE9E85 /* DoublyLinkedListQueue.swift */,
+				7F5954E82B6BAEA000F12C0A /* LinkedListQueue.swift */,
 			);
-			path = DoublyLinkedListQueue;
+			path = CustomLinkedListQueue;
 			sourceTree = "<group>";
 		};
 		C7694E6D259C3EC00053667F = {
@@ -249,6 +252,7 @@
 				7F99BB632B62CA3800FE9E85 /* BankerManager.swift in Sources */,
 				7F99BB4E2B62AA0F00FE9E85 /* QueueProtocol.swift in Sources */,
 				C7694E7A259C3EC00053667F /* main.swift in Sources */,
+				7F5954E92B6BAEA000F12C0A /* LinkedListQueue.swift in Sources */,
 				7F99BB4A2B62A7A500FE9E85 /* Node.swift in Sources */,
 				7F5954E12B6B6A5500F12C0A /* Transaction.swift in Sources */,
 				7F5954E72B6BA00900F12C0A /* ConsoleMessage.swift in Sources */,
