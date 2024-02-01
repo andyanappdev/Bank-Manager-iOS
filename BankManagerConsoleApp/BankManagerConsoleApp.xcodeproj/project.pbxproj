@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5954DF2B6B69B700F12C0A /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5954DE2B6B69B700F12C0A /* TransactionType.swift */; };
 		7F99BB4A2B62A7A500FE9E85 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB492B62A7A500FE9E85 /* Node.swift */; };
 		7F99BB4C2B62A8B900FE9E85 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */; };
 		7F99BB4E2B62AA0F00FE9E85 /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F5954DE2B6B69B700F12C0A /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 		7F99BB492B62A7A500FE9E85 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		7F99BB4B2B62A8B900FE9E85 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		7F99BB4D2B62AA0F00FE9E85 /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				7F9D4B342B6731AB00B2664C /* DoublyLinkedListQueue */,
 				7F99BB642B62CB6E00FE9E85 /* Customer.swift */,
 				7F99BB622B62CA3800FE9E85 /* Banker.swift */,
+				7F5954DE2B6B69B700F12C0A /* TransactionType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5954DF2B6B69B700F12C0A /* TransactionType.swift in Sources */,
 				7F99BB502B62ABDB00FE9E85 /* DoublyLinkedListQueue.swift in Sources */,
 				7F99BB652B62CB6E00FE9E85 /* Customer.swift in Sources */,
 				7F99BB4C2B62A8B900FE9E85 /* LinkedList.swift in Sources */,
