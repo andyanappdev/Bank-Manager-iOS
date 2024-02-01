@@ -18,4 +18,13 @@ extension TransactionType {
             return 1.1
         }
     }
+    
+    func transactionType() -> String {
+        switch self {
+        case TransactionType.deposit:
+            return "예금"
+        case TransactionType.loan:
+            return "대출"
+        }
+    }
 }
