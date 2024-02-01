@@ -22,12 +22,12 @@ struct ConsoleMessage {
         print("프로그램을 종료합니다.")
     }
     
-    func taskStartMessage(customerWatingNumber: Int) {
-        print("\(customerWatingNumber)번 고객 업무 시작")
+    func taskStartMessage(customerWatingNumber: Int,  transactionType: TransactionType) {
+        print("\(customerWatingNumber)번 고객 \(transactionType.transactionType())업무 시작")
     }
     
-    func teskEndMessage(customerWatingNumber: Int) {
-        print("\(customerWatingNumber)번 고객 업무 완료")
+    func teskEndMessage(customerWatingNumber: Int, transactionType: TransactionType) {
+        print("\(customerWatingNumber)번 고객 \(transactionType.transactionType())업무 완료")
     }
     
     func bankClosingMessage(totalCustomersProcessed: Int, totalProcessingTime: Double) {
