@@ -67,13 +67,13 @@ final class Bank {
     func handleCustomer(_ customer: Customer) {
         switch customer.task {
         case .deposit:
-            consoleMessage.taskStartMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
+            consoleMessages.taskStartMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
             Thread.sleep(forTimeInterval: 0.7)
-            consoleMessage.teskEndMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
+            consoleMessages.teskEndMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
         case .loan:
-            consoleMessage.taskStartMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
+            consoleMessages.taskStartMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
             Thread.sleep(forTimeInterval: 1.1)
-            consoleMessage.teskEndMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
+            consoleMessages.teskEndMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
         }
     }
     
