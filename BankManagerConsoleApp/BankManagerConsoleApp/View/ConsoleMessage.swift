@@ -26,7 +26,7 @@ struct ConsoleMessage {
         print("\(customerWatingNumber)번 고객 \(transactionType.transactionType())업무 시작")
     }
     
-    func teskEndMessage(customerWatingNumber: Int, transactionType: TransactionType) {
+    func taskEndMessage(customerWatingNumber: Int, transactionType: TransactionType) {
         print("\(customerWatingNumber)번 고객 \(transactionType.transactionType())업무 완료")
     }
     
