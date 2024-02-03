@@ -34,8 +34,9 @@ final class Bank {
     func processCustomer() {
         let queue = DispatchQueue.global()
         let group = DispatchGroup()
+        let startTime = DispatchTime.now()
         
-        for _ in 0..<totalCustomers {
+        for _ in 1...totalCustomers {
             guard let customer = customerQueue.dequeue() else { continue }
             
             switch customer.task {
@@ -54,32 +55,31 @@ final class Bank {
             }
         }
         
-//        while let customer = customerQueue.dequeue() {
-//            consoleMessage.taskStartMessage(customerNumber: customer.waitingNumber)
-//            Thread.sleep(forTimeInterval: 0.7)
-//            print(startTime)
-//            consoleMessage.teskEndMessage(customerNumber: customer.waitingNumber)
-//        }
         group.wait()
-        closed()
+        let endTime = DispatchTime.now()
+        let totalTime = Double(endTime.uptimeNanoseconds - startTime.uptimeNanoseconds) / 1_000_000_000
+        closed(totalTime: totalTime)
     }
     
     func handleCustomer(_ customer: Customer) {
         switch customer.task {
         case .deposit:
-            consoleMessages.taskStartMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
+            consoleMessages.taskStartMessage(customerNumber: customer.waitingNumber,
+                                             task: customer.task.description)
             Thread.sleep(forTimeInterval: 0.7)
-            consoleMessages.teskEndMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
+            consoleMessages.teskEndMessage(customerNumber: customer.waitingNumber, 
+                                           task: customer.task.description)
         case .loan:
-            consoleMessages.taskStartMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
+            consoleMessages.taskStartMessage(customerNumber: customer.waitingNumber, 
+                                             task: customer.task.description)
             Thread.sleep(forTimeInterval: 1.1)
-            consoleMessages.teskEndMessage(customerNumber: customer.waitingNumber, task: customer.task.description)
+            consoleMessages.teskEndMessage(customerNumber: customer.waitingNumber, 
+                                           task: customer.task.description)
         }
     }
     
     /// 업무가 마감됨
-    func closed() {
-        let totalTime = Double(totalCustomers) * 0.7
+    func closed(totalTime: Double) {
         consoleMessages.bankClosure(totalCustomers: totalCustomers, time: totalTime)
     }
 }
