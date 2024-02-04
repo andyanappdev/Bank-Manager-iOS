@@ -14,6 +14,7 @@ final class Bank<Q: QueueProtocol> where Q.Element == Customer {
     private let bankerManager: BankerManager
     private let message: ConsoleMessage
     private let processingQueue: DispatchQueue
+    private var elapsedTime: Double
     
     init(waitingCustomers: Q,
          bankerManager: BankerManager,
@@ -24,6 +25,7 @@ final class Bank<Q: QueueProtocol> where Q.Element == Customer {
         self.bankerManager = bankerManager
         self.message = message
         self.processingQueue = processingQueue
+        self.elapsedTime = 0
     }
     
     
@@ -52,9 +54,12 @@ final class Bank<Q: QueueProtocol> where Q.Element == Customer {
     
     private func processCustomerTransaction(completion: @escaping () -> Void) {
         let dispatchGroup = DispatchGroup()
+        var startTimes: [DispatchTime] = []
         
         while !waitingCustomers.isEmpty() {
             if let customer = waitingCustomers.dequeue() {
+                let startTime = DispatchTime.now()
+                startTimes.append(startTime)
                 dispatchGroup.enter()
                 
                 processingQueue.async {
@@ -66,13 +71,17 @@ final class Bank<Q: QueueProtocol> where Q.Element == Customer {
         }
         dispatchGroup.wait()
         
+        let endTime = DispatchTime.now()
+        elapsedTime = Double(endTime.uptimeNanoseconds - startTimes.first!.uptimeNanoseconds) / 1_000_000_000
+
+        
         dispatchGroup.notify(queue: processingQueue) {
             completion()
         }
     }
     
     private func closeBank(completion: @escaping () -> Void) {
-        message.bankClosingMessage(totalCustomersProcessed: bankerManager.totalCustomersProcessed, totalProcessingTime: bankerManager.totalProcessingTime)
+        message.bankClosingMessage(totalCustomersProcessed: bankerManager.totalCustomersProcessed, totalProcessingTime: elapsedTime)
         completion()
     }
 }
