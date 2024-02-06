@@ -1,11 +1,12 @@
 //
-//  LinkedQueue.swift
-//  BankManagerUIApp
+//  DoublyLinkedListQueue.swift
+//  BankManagerConsoleApp
 //
-//  Created by Doyoung An on 1/23/24.
+//  Created by Doyoung An on 1/25/24.
 //
 
-struct LinkedListQueue<T>: Queue {
+struct DoublyLinkedListQueue<T>: QueueProtocol {
+    
     // MARK: - Properties
     private var queue: LinkedList<T>
     private var size: Int {
@@ -19,7 +20,7 @@ struct LinkedListQueue<T>: Queue {
 
 
 // MARK: - Extension
-extension LinkedListQueue {
+extension DoublyLinkedListQueue {
     func enqueue(_ element: T) {
         queue.append(value: element)
     }
@@ -40,4 +41,3 @@ extension LinkedListQueue {
         return queue.isEmpty()
     }
 }
-

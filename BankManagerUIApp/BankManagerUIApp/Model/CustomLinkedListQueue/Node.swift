@@ -1,8 +1,8 @@
 //
 //  Node.swift
-//  BankManagerUIApp
+//  BankManagerConsoleApp
 //
-//  Created by Doyoung An on 1/23/24.
+//  Created by Doyoung An on 1/25/24.
 //
 
 final class Node<T> {
