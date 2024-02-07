@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FA482392B7318AD00F9927B /* CustomerTransactionProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA482382B7318AD00F9927B /* CustomerTransactionProgressView.swift */; };
+		7FA4823C2B7319E600F9927B /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4823B2B7319E600F9927B /* DependencyInjection.swift */; };
 		7FA83C0F2B72725300381AD6 /* Banker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA83C032B72725300381AD6 /* Banker.swift */; };
 		7FA83C102B72725300381AD6 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA83C042B72725300381AD6 /* Customer.swift */; };
 		7FA83C112B72725300381AD6 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA83C052B72725300381AD6 /* TransactionType.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		7FA482382B7318AD00F9927B /* CustomerTransactionProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTransactionProgressView.swift; sourceTree = "<group>"; };
+		7FA4823B2B7319E600F9927B /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		7FA83C032B72725300381AD6 /* Banker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banker.swift; sourceTree = "<group>"; };
 		7FA83C042B72725300381AD6 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		7FA83C052B72725300381AD6 /* TransactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 				7FA482382B7318AD00F9927B /* CustomerTransactionProgressView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7FA4823A2B7319CB00F9927B /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				7FA4823B2B7319E600F9927B /* DependencyInjection.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		7FA83C022B72725300381AD6 /* Model */ = {
@@ -183,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				7FFA99A92B5FE10B00CF0B3D /* App */,
+				7FA4823A2B7319CB00F9927B /* DI */,
 				7FA83C022B72725300381AD6 /* Model */,
 				7FA482372B73188F00F9927B /* View */,
 				7FFA99AB2B5FE1C200CF0B3D /* Controller */,
@@ -344,6 +355,7 @@
 				7FA83C162B72725300381AD6 /* Node.swift in Sources */,
 				7FA83C102B72725300381AD6 /* Customer.swift in Sources */,
 				7FA83C182B72725300381AD6 /* Transaction.swift in Sources */,
+				7FA4823C2B7319E600F9927B /* DependencyInjection.swift in Sources */,
 				C7694E3B259C3E9F0053667F /* AppDelegate.swift in Sources */,
 				7FA83C172B72725300381AD6 /* LinkedList.swift in Sources */,
 				7FA83C192B72725300381AD6 /* BankerManager.swift in Sources */,
