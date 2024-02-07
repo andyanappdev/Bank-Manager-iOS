@@ -23,15 +23,16 @@ class Banker {
     
     //MARK: - Method
     func processCustomerTransaction(customer: Customer, completion: @escaping () -> Void) {
-//        let dispatchGroup = DispatchGroup()
+        let dispatchGroup = DispatchGroup()
         
-//        dispatchGroup.enter()
+        dispatchGroup.enter()
         isBusy.toggle()
         
         DispatchQueue.global().asyncAfter(deadline: .now() + customer.transaction.duration) {
             self.isBusy.toggle()
-//            dispatchGroup.leave()
+            dispatchGroup.leave()
             completion()
         }
+        dispatchGroup.wait()
     }
 }
