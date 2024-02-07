@@ -113,6 +113,14 @@ final class CustomerTransactionProgressView: UIView {
 //        return stackView
 //    }
     
+    private func configureScrollView(subView: UIView) -> UIScrollView {
+        let scrollView = UIScrollView()
+        scrollView.addSubview(subView)
+        scrollView.bounces = false
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }
+    
     private func configureCustomerTransactionLabel(customer: Customer) -> UILabel {
         let label = UILabel()
         label.text = "\(customer.watingNumber) - \(customer.transaction.type.transactionType())"
@@ -124,16 +132,9 @@ final class CustomerTransactionProgressView: UIView {
         case .loan:
             label.textColor = UIColor.systemOrange
         }
+        label.tag = customer.watingNumber
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
-    }
-    
-    private func configureScrollView(subView: UIView) -> UIScrollView {
-        let scrollView = UIScrollView()
-        scrollView.addSubview(subView)
-        scrollView.bounces = false
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        return scrollView
     }
     
     

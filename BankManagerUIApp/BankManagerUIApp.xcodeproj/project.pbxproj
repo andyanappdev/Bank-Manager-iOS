@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7FA482392B7318AD00F9927B /* CustomerTransactionProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA482382B7318AD00F9927B /* CustomerTransactionProgressView.swift */; };
 		7FA4823C2B7319E600F9927B /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4823B2B7319E600F9927B /* DependencyInjection.swift */; };
+		7FA4825E2B736A6000F9927B /* CustomerTransactionLabelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4825D2B736A6000F9927B /* CustomerTransactionLabelProtocol.swift */; };
 		7FA83C0F2B72725300381AD6 /* Banker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA83C032B72725300381AD6 /* Banker.swift */; };
 		7FA83C102B72725300381AD6 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA83C042B72725300381AD6 /* Customer.swift */; };
 		7FA83C112B72725300381AD6 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA83C052B72725300381AD6 /* TransactionType.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		7FA482382B7318AD00F9927B /* CustomerTransactionProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTransactionProgressView.swift; sourceTree = "<group>"; };
 		7FA4823B2B7319E600F9927B /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		7FA4825D2B736A6000F9927B /* CustomerTransactionLabelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTransactionLabelProtocol.swift; sourceTree = "<group>"; };
 		7FA83C032B72725300381AD6 /* Banker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banker.swift; sourceTree = "<group>"; };
 		7FA83C042B72725300381AD6 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		7FA83C052B72725300381AD6 /* TransactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				7FA83C032B72725300381AD6 /* Banker.swift */,
 				7FA83C0E2B72725300381AD6 /* BankerManager.swift */,
 				7FA83C062B72725300381AD6 /* Bank.swift */,
+				7FA4825D2B736A6000F9927B /* CustomerTransactionLabelProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA83C132B72725300381AD6 /* LinkedListQueue.swift in Sources */,
+				7FA4825E2B736A6000F9927B /* CustomerTransactionLabelProtocol.swift in Sources */,
 				7FA83C142B72725300381AD6 /* QueueProtocol.swift in Sources */,
 				C7694E3F259C3E9F0053667F /* CustomerTransactionProgressViewController.swift in Sources */,
 				7FA83C162B72725300381AD6 /* Node.swift in Sources */,
